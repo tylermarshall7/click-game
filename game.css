@@ -1,1 +1,18 @@
-!!
+html {
+  overflow: hidden
+}
+
+.full-height {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto
+}
+
+.bg-img {
+height: 100%;
+background-image: url("background.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover
+
+}
