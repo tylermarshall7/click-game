@@ -14,5 +14,18 @@ background-image: url("background.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover
+}
 
+.stats{
+  border: 5px black;
+  background-color: black;
+}
+
+.upgrade-box{
+  border: 5px black;
+  background-color: black;
+}
+
+.upgrade-card{
+  display: inline-flex;
 }
