@@ -12,39 +12,36 @@
 
 
 <body class="bg-img">
-  <main class="container-fluid">
-    <div class="row d-flex justify-content-center"></div>
+  <main class="container-fluid full-height">
+    <div class="row justify-content-center"></div>
     <div class="col-12 text-light text-center">
       <h1>Fossil Digger</h1>
     </div>
 
 
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
+      <div class="row h-100 justify-content-center">
 
-        <div class="col-4 d-flex justify-content-center upgrade-box">
+        <div class="col-5 upgrade-box">
 
-          <div class="row d-flex justify-content-center upgrade-card">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="card">
-                <img class="card-img-top" src="shovel.png">
-                <div class="card-body">
+          <div class="row justify-content-center upgrade-card">
+            <div class="col-6 d-flex justify-content-center">
+              <div class="card px-5">
+                <img class="img-fluid" src="shovel.png">
+                <div>
                   <h5 class="card-title">Shovel</h5>
-                  <p class="card-text">standard shovel used to dig. <b>Provides +1 fossils per click</b></p>
-                  <button class="btn btn-primary" id="shovelButton" onclick="buyClick(`shovel`)"><span
+                  <button class="btn btn-primary" id="shovelButton" onclick="buyClick(`shovel`)" data-toggle="tooltip" data-placement="top" title="standard shovel used to dig. <b>Provides +1 fossils per click</b>"><span
                       id="shovelPrice"></span></button>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 d-flex justify-content-center">
-              <div class="card">
-                <img class="card-img-top" src="goldShovel.png">
-                <div class="card-body">
+            <div class="col-6 d-flex justify-content-center">
+              <div class="card px-5">
+                <img class="img-fluid" src="goldShovel.png">
+                <div>
                   <h5 class="card-title">Golden Shovel</h5>
-                  <p class="card-text">shovel made of gold used to dig more efficiently. <b>Provides +5 fossils per
-                      click</b></p>
-                  <button class="btn btn-primary" id="goldShovelButton" onclick="buyClick(`goldShovel`)"><span
+                  <button class="btn btn-primary" id="goldShovelButton" onclick="buyClick(`goldShovel`)" data-toggle="tooltip" data-placement="top" title="shovel made of gold used to dig more efficiently. <b>Provides +5 fossils per
+                    click</b>"><span
                       id="goldShovelPrice"></span></button>
                 </div>
               </div>
@@ -53,28 +50,26 @@
           </div>
 
           <div class="row d-flex justify-content-center upgrade-card">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="card">
-                <img class="card-img-top" src="resetti.jpg">
-                <div class="card-body">
+            <div class="col-6 d-flex justify-content-center">
+              <div class="card px-5">
+                <img class="img-fluid" src="resetti.jpg">
+                <div>
                   <h5 class="card-title">Resetti's Crew</h5>
-                  <p class="card-text">Hires workers to do the digging for you. <b>Provides +10 fossils every 3
-                      seconds</b></p>
-                  <button class="btn btn-primary" id="resettiButton" onclick="buyAuto(`resetti`)"><span
+                  <button class="btn btn-primary" id="resettiButton" onclick="buyAuto(`resetti`)" data-toggle="tooltip" data-placement="top" title="Hires workers to do the digging for you. <b>Provides +10 fossils every 3
+                    seconds</b>"><span
                       id="resettiPrice"></span></button>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 d-flex justify-content-center">
-              <div class="card">
-                <img class="card-img-top" src="Blathers.png">
-                <div class="card-body">
+            <div class="col-6 d-flex justify-content-center">
+              <div class="card px-5">
+                <img class="img-fluid" src="Blathers.png">
+                <div>
                   <h5 class="card-title">Blathers' Museum Staff</h5>
-                  <p class="card-text">Hires staff from the local museum that know where to dig due to their fancy
-                    archeology degrees. <b>Provides +30 fossils every 3
-                      seconds</b></p>
-                  <button class="btn btn-primary" id="blathersButton" onclick="buyAuto(`blathers`)"><span
+                  <button class="btn btn-primary" id="blathersButton" onclick="buyAuto(`blathers`)" data-toggle="tooltip" data-placement="top" title="Hires staff from the local museum that know where to dig due to their fancy
+                  archeology degrees. <b>Provides +30 fossils every 3
+                    seconds</b>"><span
                       id="blathersPrice"></span></button>
                 </div>
               </div>
@@ -83,12 +78,12 @@
           </div>
         </div>
 
-        <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="col-2 d-flex align-items-center">
           <img class="img-fluid" onclick="dig()" src="fossil.png">
         </div>
 
 
-        <div class="col-4 d-flex justify-content-center align-items-center stats text-light">
+        <div class="col-5 stats text-light">
           <div class="row">
             <div class="col-12">
               <h1 class="pb-1">fossils:<span id="fossilTotal"></span></h1>
@@ -106,7 +101,6 @@
           </div>
         </div>
       </div>
-    </div>
 
   </main>
 
