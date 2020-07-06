@@ -48,7 +48,7 @@ function dig() {
 }
 
 function update() {
-  document.getElementById("fossilTotal").innerText = fossil
+  document.getElementById("fossilTotal").innerText = fossil.toString()
 
   document.getElementById("shovelPrice").innerText = clickUpgrades['shovel'].price.toString()
   document.getElementById("shovelQuantity").innerText = clickUpgrades[`shovel`].quantity.toString()
